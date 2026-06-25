@@ -324,3 +324,86 @@ textarea{
 .module-header h1{
     margin:0;
 }
+
+/* ===== Agenda módulo 01 ===== */
+
+.agenda-module{
+    display:grid;
+    gap:20px;
+}
+
+.agenda-menu{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.agenda-menu-btn{
+    padding:10px 14px;
+    border:none;
+    border-radius:8px;
+    background:#e5e7eb;
+    cursor:pointer;
+}
+
+.agenda-menu-btn.active{
+    background:#111827;
+    color:white;
+}
+
+.agenda-tab-content{
+    display:none;
+}
+
+.agenda-tab-content.active-tab{
+    display:block;
+}
+
+.agenda-tab-content textarea,
+.agenda-tab-content input{
+    width:100%;
+    margin-bottom:10px;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+}
+
+.agenda-tab-content textarea{
+    min-height:180px;
+}
+
+.agenda-week-paper{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.agenda-week-paper textarea{
+    min-height:140px;
+}
+
+.agenda-tab-content button{
+    padding:10px 14px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+.agenda-tab-content li{
+    margin-bottom:10px;
+}
+
+.agenda-tab-content li button{
+    background:#ef4444;
+    padding:4px 8px;
+    margin-left:10px;
+}
+
+@media(max-width:900px){
+    .agenda-week-paper{
+        grid-template-columns:1fr;
+    }
+}

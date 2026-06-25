@@ -3,22 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pàjó Organizer — agenda</title>
+<title>Agenda | Pàjó Organizer</title>
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <div class="module-page">
-    <header class="module-header">
-        <a href="../index.html">⬅ Dashboard</a>
-        <h1>Pàjó Organizer</h1>
-    </header>
 
-    <main class="card">
-        <h2>agenda</h2>
-        <p>Módulo em construção.</p>
-    </main>
+<header class="module-header">
+    <a href="../index.html">⬅ Dashboard</a>
+    <h1>📅 Agenda</h1>
+</header>
+
+<main class="agenda-module">
+
+<section class="card">
+    <h2>Agenda</h2>
+    <p>Organização diária, semanal, mensal e anual.</p>
+
+    <div class="agenda-menu">
+        <button class="agenda-menu-btn active" data-tab="hoje">Hoje</button>
+        <button class="agenda-menu-btn" data-tab="amanha">Amanhã</button>
+        <button class="agenda-menu-btn" data-tab="semana">Semana</button>
+        <button class="agenda-menu-btn" data-tab="mes">Mês</button>
+        <button class="agenda-menu-btn" data-tab="ano">Ano</button>
+        <button class="agenda-menu-btn" data-tab="eventos">Eventos</button>
+        <button class="agenda-menu-btn" data-tab="aniversarios">Aniversários</button>
+        <button class="agenda-menu-btn" data-tab="feriados">Feriados</button>
+        <button class="agenda-menu-btn" data-tab="planeamento">Planeamento</button>
+    </div>
+</section>
+
+<section id="hoje" class="agenda-tab-content active-tab card">
+    <h2>📆 Hoje</h2>
+    <div id="agenda-today-date"></div>
+    <textarea id="agenda-hoje-notas" placeholder="Notas para hoje..."></textarea>
+</section>
+
+<section id="amanha" class="agenda-tab-content card">
+    <h2>📆 Amanhã</h2>
+    <div id="agenda-tomorrow-date"></div>
+    <textarea id="agenda-amanha-notas" placeholder="Notas para amanhã..."></textarea>
+</section>
+
+<section id="semana" class="agenda-tab-content card">
+    <h2>📖 Semana</h2>
+    <div class="agenda-week-paper">
+        <textarea placeholder="Segunda-feira"></textarea>
+        <textarea placeholder="Terça-feira"></textarea>
+        <textarea placeholder="Quarta-feira"></textarea>
+        <textarea placeholder="Quinta-feira"></textarea>
+        <textarea placeholder="Sexta-feira"></textarea>
+        <textarea placeholder="Sábado"></textarea>
+        <textarea placeholder="Domingo"></textarea>
+    </div>
+</section>
+
+<section id="mes" class="agenda-tab-content card">
+    <h2>🗓 Mês</h2>
+    <p>Planeamento mensal.</p>
+    <textarea id="agenda-mes-notas" placeholder="Notas do mês..."></textarea>
+</section>
+
+<section id="ano" class="agenda-tab-content card">
+    <h2>📊 Ano</h2>
+    <p>Planeamento anual.</p>
+    <textarea id="agenda-ano-notas" placeholder="Objetivos e notas do ano..."></textarea>
+</section>
+
+<section id="eventos" class="agenda-tab-content card">
+    <h2>📌 Eventos</h2>
+    <input id="evento-titulo" type="text" placeholder="Título do evento">
+    <input id="evento-data" type="date">
+    <input id="evento-hora" type="time">
+    <button id="guardar-evento">Guardar evento</button>
+    <ul id="lista-eventos"></ul>
+</section>
+
+<section id="aniversarios" class="agenda-tab-content card">
+    <h2>🎂 Aniversários</h2>
+    <input id="aniv-nome" type="text" placeholder="Nome">
+    <input id="aniv-data" type="date">
+    <button id="guardar-aniv">Guardar aniversário</button>
+    <ul id="lista-aniversarios"></ul>
+</section>
+
+<section id="feriados" class="agenda-tab-content card">
+    <h2>🎉 Feriados</h2>
+    <p>Secção para feriados do Reino Unido, Portugal e outros países.</p>
+</section>
+
+<section id="planeamento" class="agenda-tab-content card">
+    <h2>🧭 Planeamento</h2>
+    <textarea id="agenda-planeamento" placeholder="Planeamento geral..."></textarea>
+</section>
+
+</main>
+
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
