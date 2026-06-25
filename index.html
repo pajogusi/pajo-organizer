@@ -90,7 +90,35 @@
 <section id="agenda" class="section">
     <div class="card">
         <h2>📅 Agenda</h2>
-        <p>Área para agenda diária, semanal, mensal e anual.</p>
+
+        <div class="agenda-controls">
+            <button id="agenda-prev">⬅ Anterior</button>
+            <button id="agenda-today">Hoje</button>
+            <button id="agenda-next">Seguinte ➡</button>
+        </div>
+
+        <div class="agenda-tabs">
+            <button class="agenda-tab active" data-view="day">Dia</button>
+            <button class="agenda-tab" data-view="week">Semana</button>
+            <button class="agenda-tab" data-view="month">Mês</button>
+            <button class="agenda-tab" data-view="year">Ano</button>
+        </div>
+
+        <h3 id="agenda-title"></h3>
+
+        <div id="agenda-view"></div>
+
+        <div class="event-form">
+            <h3>➕ Novo compromisso</h3>
+            <input id="event-title" type="text" placeholder="Título do compromisso">
+            <input id="event-date" type="date">
+            <input id="event-time" type="time">
+            <textarea id="event-notes" placeholder="Notas..."></textarea>
+            <button id="add-event">Adicionar compromisso</button>
+        </div>
+
+        <h3>📌 Compromissos guardados</h3>
+        <ul id="event-list"></ul>
     </div>
 </section>
 

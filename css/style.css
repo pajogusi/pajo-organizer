@@ -197,3 +197,103 @@ textarea{
     padding:4px 8px;
     cursor:pointer;
 }
+
+.agenda-controls,
+.agenda-tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.agenda-controls button,
+.agenda-tabs button,
+#add-event{
+    padding:10px 14px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+.agenda-tab.active{
+    background:#111827;
+}
+
+#agenda-view{
+    margin:20px 0;
+}
+
+.agenda-day,
+.agenda-week,
+.agenda-month,
+.agenda-year{
+    display:grid;
+    gap:10px;
+}
+
+.agenda-day{
+    grid-template-columns:1fr;
+}
+
+.hour-block,
+.week-day,
+.month-day,
+.year-month{
+    background:#f3f4f6;
+    border-radius:10px;
+    padding:12px;
+    min-height:70px;
+}
+
+.agenda-week{
+    grid-template-columns:repeat(7,1fr);
+}
+
+.agenda-month{
+    grid-template-columns:repeat(7,1fr);
+}
+
+.agenda-year{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.event-form{
+    display:grid;
+    gap:10px;
+    margin-top:25px;
+    margin-bottom:20px;
+}
+
+.event-form input,
+.event-form textarea{
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+}
+
+.event-item{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:10px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.event-item button{
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:4px 8px;
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+    .agenda-week,
+    .agenda-month,
+    .agenda-year{
+        grid-template-columns:1fr;
+    }
+}
