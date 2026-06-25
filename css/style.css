@@ -297,3 +297,30 @@ textarea{
         grid-template-columns:1fr;
     }
 }
+
+/* ===== Arquitetura Modular v1.0 ===== */
+
+.module-page{
+    min-height:100vh;
+    padding:24px;
+    background:#eef1f5;
+}
+
+.module-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.module-header a{
+    background:#111827;
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:8px;
+}
+
+.module-header h1{
+    margin:0;
+}
