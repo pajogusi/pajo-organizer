@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Pàjó Organizer</title>
-
 <link rel="manifest" href="manifest.json">
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-<h1>Pàjó Organizer</h1>
+<div class="app">
 
-<p>Primeira versão.</p>
+<aside class="sidebar">
+    <div class="logo">📒 Pàjó Organizer</div>
+
+    <button class="new-page">+ Nova Página</button>
+
+    <nav>
+        <a class="active">🏠 Dashboard</a>
+        <a>📅 Agenda</a>
+        <a>✅ Tarefas</a>
+        <a>📝 Notas</a>
+        <a>👤 Contactos</a>
+        <a>💼 Projetos</a>
+        <a>💰 Finanças</a>
+        <a>✈️ Viagens</a>
+        <a>🌍 Mundo</a>
+        <a>⚙️ Definições</a>
+    </nav>
+</aside>
+
+<main class="main">
+
+<header class="topbar">
+    <h1>Dashboard</h1>
+    <span>Hoje</span>
+</header>
+
+<section class="grid">
+
+<div class="card large">
+    <h2>📅 Agenda Semanal</h2>
+    <div class="week">
+        <div><strong>Seg</strong><p>Projetos</p></div>
+        <div><strong>Ter</strong><p>Notas</p></div>
+        <div><strong>Qua</strong><p>GitHub</p></div>
+        <div><strong>Qui</strong><p>Estudo</p></div>
+        <div><strong>Sex</strong><p>Revisão</p></div>
+        <div><strong>Sáb</strong><p>Família</p></div>
+        <div><strong>Dom</strong><p>Planeamento</p></div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>✅ Tarefas</h2>
+    <ul>
+        <li><input type="checkbox"> Atualizar Organizer</li>
+        <li><input type="checkbox"> Rever projetos</li>
+        <li><input type="checkbox"> Criar notas rápidas</li>
+        <li><input type="checkbox"> Planear semana</li>
+    </ul>
+</div>
+
+<div class="card note">
+    <h2>📝 Nota Rápida</h2>
+    <textarea placeholder="Escreve aqui uma nota rápida..."></textarea>
+</div>
+
+<div class="card">
+    <h2>📌 Projetos Ativos</h2>
+    <p>📚 Repositório de Solicitadoria</p>
+    <p>🇬🇧 Leis UK para Portugueses</p>
+    <p>📒 Pàjó Organizer</p>
+    <p>⛽ Combustível</p>
+</div>
+
+<div class="card">
+    <h2>🌍 Informação Rápida</h2>
+    <p><strong>Fuso:</strong> UK</p>
+    <p><strong>Moeda:</strong> GBP £</p>
+    <p><strong>Emergência:</strong> 999 / 112</p>
+    <p><strong>NHS:</strong> 111</p>
+</div>
+
+<div class="card">
+    <h2>📚 Secções Especiais</h2>
+    <p>Feriados</p>
+    <p>Moedas</p>
+    <p>Códigos Telefónicos</p>
+    <p>Mapa do Mundo</p>
+</div>
+
+</section>
+
+</main>
+
+</div>
 
 <script src="js/script.js"></script>
-
 </body>
 </html>
